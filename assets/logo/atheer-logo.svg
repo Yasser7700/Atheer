@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1B2B8A"/>
+      <stop offset="100%" stop-color="#00C8E8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Mark: Arch + NFC Waves (matches the actual Atheer logo) -->
+  <!-- Arch base (letter n shape) -->
+  <path d="M 20 44 L 20 30 Q 20 18 32 18 Q 44 18 44 30 L 44 44" 
+        stroke="url(#logoGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- NFC Wave 1 (inner, smallest) -->
+  <path d="M 16 24 Q 20 10 32 8 Q 44 6 48 20"
+        stroke="url(#logoGrad)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+  <!-- NFC Wave 2 (middle) -->
+  <path d="M 10 20 Q 16 2 32 0 Q 48 -2 54 16"
+        stroke="url(#logoGrad)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- NFC Wave 3 (outer, largest) -->
+  <path d="M 4 16 Q 12 -6 32 -8 Q 52 -10 60 12"
+        stroke="url(#logoGrad)" stroke-width="2.8" stroke-linecap="round" fill="none" opacity="0.75"/>
+
+  <!-- Wordmark: Atheer -->
+  <text x="74" y="42" 
+        font-family="'Inter','Segoe UI',Arial,sans-serif" 
+        font-size="26" 
+        font-weight="700" 
+        fill="url(#logoGrad)"
+        letter-spacing="0.5">Atheer</text>
+</svg>

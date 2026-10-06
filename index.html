@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="أثير — بنية تحتية للمدفوعات اللاتلامسية، مصممة للعمل بدون إنترنت. NFC · Offline-First · SoftPOS · Built for Yemen." />
+  <meta name="theme-color" content="#050A0E" />
+  <title>أثير | Atheer — Offline-First Payment Infrastructure</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  NAVBAR                                              ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<nav id="navbar" role="navigation" aria-label="التنقل الرئيسي">
+  <div class="nav-inner">
+
+    <a class="nav-logo" href="#hero" aria-label="أثير - الرئيسية">
+      <img src="assets/logo/atheer-logo.svg" alt="شعار أثير Atheer" width="180" height="40" />
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#problem">المشكلة</a></li>
+      <li><a href="#how">كيف يعمل</a></li>
+      <li><a href="#demo">التجربة</a></li>
+      <li><a href="#security">الأمان</a></li>
+      <li><a href="#ecosystem">المنظومة</a></li>
+      <li><a href="#value">القيمة</a></li>
+      <li><a href="#partnership">الشراكة</a></li>
+      <li><a href="#contact" class="nav-cta">تواصل معنا</a></li>
+    </ul>
+
+    <button class="nav-hamburger" aria-label="فتح القائمة" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="nav-mobile-menu" role="dialog" aria-modal="true" aria-label="القائمة الرئيسية">
+  <button class="nav-mobile-close" aria-label="إغلاق القائمة">✕</button>
+  <a href="#problem">المشكلة</a>
+  <a href="#how">كيف يعمل</a>
+  <a href="#demo">التجربة</a>
+  <a href="#security">الأمان</a>
+  <a href="#ecosystem">المنظومة</a>
+  <a href="#value">القيمة</a>
+  <a href="#partnership">الشراكة</a>
+  <a href="#contact">تواصل معنا</a>
+</div>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 01 — HERO                                   ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="hero" aria-label="القسم الرئيسي">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid-lines" aria-hidden="true"></div>
+
+  <div class="hero-content">
+
+    <!-- Text Column -->
+    <div class="hero-text-col">
+
+      <div class="hero-badge reveal">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        OFFLINE-FIRST PAYMENT INFRASTRUCTURE
+      </div>
+
+      <h1 class="hero-title reveal delay-1">أثير</h1>
+      <p class="hero-subtitle-en reveal delay-2">Atheer</p>
+
+      <h2 class="hero-headline reveal delay-2">
+        الدفع الرقمي يعمل<br />
+        <span>حيث لا يعمل الإنترنت.</span>
+      </h2>
+
+      <p class="hero-body reveal delay-3">
+        بنية تحتية للمدفوعات اللاتلامسية، مصممة لتعمل في البيئات
+        التي تعاني من ضعف أو انقطاع الاتصال.
+        <strong style="color: var(--text-primary)">وقّع محليًا. تحقق مركزيًا.</strong>
+      </p>
+
+      <div class="hero-actions reveal delay-4">
+        <a href="#demo" class="btn btn-primary">
+          شاهد كيف يعمل أثير
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="#ecosystem" class="btn btn-secondary">استكشف المنظومة</a>
+      </div>
+
+    </div>
+
+    <!-- Visual Column -->
+    <div class="hero-visual-col reveal-scale delay-2">
+      <div class="nfc-viz" aria-label="رسم توضيحي لعملية الدفع عبر NFC" role="img">
+
+        <!-- Data Particles -->
+        <div class="data-particles" aria-hidden="true">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+
+        <!-- NFC Wave Rings -->
+        <div class="nfc-waves-center" aria-hidden="true">
+          <div class="nfc-wave-ring"></div>
+          <div class="nfc-wave-ring"></div>
+          <div class="nfc-wave-ring"></div>
+          <div class="nfc-wave-ring"></div>
+        </div>
+
+        <!-- Center Label -->
+        <div class="nfc-center-label" aria-hidden="true">NFC</div>
+
+        <!-- Customer Phone -->
+        <div class="nfc-phone customer" role="img" aria-label="هاتف العميل">
+          <div class="phone-screen">
+            <span class="phone-label">CUSTOMER</span>
+            <span style="font-size:1.6rem;">💳</span>
+            <span class="phone-amount">5,000</span>
+            <span style="font-size:0.55rem;color:var(--text-muted);font-family:var(--font-latin);">YER</span>
+          </div>
+          <span class="nfc-phone-label">العميل</span>
+        </div>
+
+        <!-- Merchant Phone -->
+        <div class="nfc-phone merchant" role="img" aria-label="هاتف التاجر">
+          <div class="phone-screen">
+            <span class="phone-label">MERCHANT</span>
+            <span style="font-size:1.6rem;">🏪</span>
+            <span class="phone-amount">SoftPOS</span>
+          </div>
+          <span class="nfc-phone-label">التاجر</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator" aria-hidden="true">
+    <span>SCROLL</span>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M8 3v10M4 9l4 4 4-4" stroke="var(--text-muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 02 — THE PROBLEM                           ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="problem" aria-labelledby="problem-heading">
+
+  <div class="container section-pad">
+
+    <div class="section-label reveal">THE PROBLEM</div>
+
+    <h2 id="problem-heading" class="problem-headline reveal delay-1">
+      ماذا يحدث عندما يتوقف الإنترنت؟
+    </h2>
+
+    <div class="problem-cards" role="list">
+
+      <article class="problem-card" role="listitem" aria-label="مشكلة ضعف الاتصال">
+        <div class="problem-number" aria-hidden="true">01</div>
+        <span class="problem-icon" aria-hidden="true">📶</span>
+        <h3 class="problem-title">اتصال ضعيف</h3>
+        <p class="problem-text">
+          الدفع الرقمي يتعطل عندما تصبح الشبكة غير مستقرة،
+          مما يجعل التجربة غير موثوقة للمستخدمين والتجار.
+        </p>
+      </article>
+
+      <article class="problem-card" role="listitem" aria-label="مشكلة انقطاع الاتصال">
+        <div class="problem-number" aria-hidden="true">02</div>
+        <span class="problem-icon" aria-hidden="true">📵</span>
+        <h3 class="problem-title">انقطاع الاتصال</h3>
+        <p class="problem-text">
+          المستخدم يعود إلى الكاش رغم امتلاكه محفظة رقمية،
+          لأن الأنظمة الحالية تتطلب اتصالاً دائمًا بالإنترنت.
+        </p>
+      </article>
+
+      <article class="problem-card" role="listitem" aria-label="مشكلة تكلفة أجهزة POS">
+        <div class="problem-number" aria-hidden="true">03</div>
+        <span class="problem-icon" aria-hidden="true">💸</span>
+        <h3 class="problem-title">تكلفة نقاط البيع</h3>
+        <p class="problem-text">
+          أجهزة POS التقليدية تضيف تكلفة ومعدات وصيانة مستمرة،
+          مما يعيق انتشار الدفع الرقمي بين التجار الصغار.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="problem-statement reveal">
+      <p>المشكلة ليست في رغبة الناس بالدفع رقميًا.</p>
+      <p>المشكلة أن <span>البنية الحالية تفترض أن الإنترنت متاح دائمًا.</span></p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 03 — THE SHIFT                             ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="shift" aria-labelledby="shift-heading">
+  <div class="shift-glow" aria-hidden="true"></div>
+
+  <div class="container section-pad" style="text-align:center; position:relative; z-index:1;">
+
+    <div class="section-label reveal" style="justify-content:center;">THE SHIFT</div>
+
+    <div class="shift-title-small reveal delay-1" id="shift-heading" aria-label="أثير">أثير</div>
+
+    <h2 class="shift-tagline reveal delay-2">
+      <span>وقّع محليًا.</span> تحقق مركزيًا.
+    </h2>
+
+    <p class="shift-body reveal delay-3">
+      ينفذ الهاتف عملية التوقيع محليًا، ثم تنتقل بيانات المعاملة عبر NFC إلى التاجر
+      ليتم التحقق منها وتنفيذها مركزيًا — بدون الحاجة إلى اتصال الإنترنت أثناء العملية.
+    </p>
+
+    <!-- Data Flow Visualization -->
+    <div class="data-flow-viz reveal delay-4" aria-label="رسم توضيحي لتدفق البيانات" role="img" dir="ltr">
+      <div class="flow-node">
+        <span class="flow-node-icon" aria-hidden="true">📱</span>
+        <span class="flow-node-label">CUSTOMER</span>
+      </div>
+      <div class="flow-arrow" aria-hidden="true"><div class="flow-packet"></div></div>
+      <div class="flow-node">
+        <span class="flow-node-icon" aria-hidden="true">🔐</span>
+        <span class="flow-node-label">SDK</span>
+      </div>
+      <div class="flow-arrow" aria-hidden="true"><div class="flow-packet"></div></div>
+      <div class="flow-node">
+        <span class="flow-node-icon" aria-hidden="true">✍️</span>
+        <span class="flow-node-label">SIGN</span>
+      </div>
+      <div class="flow-arrow" aria-hidden="true"><div class="flow-packet"></div></div>
+      <div class="flow-node">
+        <span class="flow-node-icon" aria-hidden="true">📶</span>
+        <span class="flow-node-label">NFC</span>
+      </div>
+      <div class="flow-arrow" aria-hidden="true"><div class="flow-packet"></div></div>
+      <div class="flow-node">
+        <span class="flow-node-icon" aria-hidden="true">🏪</span>
+        <span class="flow-node-label">MERCHANT</span>
+      </div>
+      <div class="flow-arrow" aria-hidden="true"><div class="flow-packet"></div></div>
+      <div class="flow-node">
+        <span class="flow-node-icon" aria-hidden="true">🔍</span>
+        <span class="flow-node-label">SWITCH</span>
+      </div>
+      <div class="flow-arrow" aria-hidden="true"><div class="flow-packet"></div></div>
+      <div class="flow-node">
+        <span class="flow-node-icon" aria-hidden="true">✅</span>
+        <span class="flow-node-label">VERIFY</span>
+      </div>
+      <div class="flow-arrow" aria-hidden="true"><div class="flow-packet"></div></div>
+      <div class="flow-node">
+        <span class="flow-node-icon" aria-hidden="true">💼</span>
+        <span class="flow-node-label">WALLET</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 04 — HOW ATHEER WORKS                      ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="how" aria-labelledby="how-heading">
+  <div class="container section-pad">
+
+    <div class="section-label reveal">HOW IT WORKS</div>
+
+    <div class="section-heading reveal delay-1">
+      <h2 id="how-heading">كيف يعمل أثير؟</h2>
+      <p>
+        ستة خطوات تحوّل هاتفَي العميل والتاجر إلى نظام دفع كامل
+        — بدون إنترنت من جانب العميل.
+      </p>
+    </div>
+
+    <!-- Steps Grid -->
+    <div class="how-steps" role="list">
+
+      <div class="step-card reveal delay-1" role="listitem">
+        <div class="step-num-wrap">
+          <span class="step-num">01</span>
+          <span class="step-icon" aria-hidden="true">🔐</span>
+        </div>
+        <h3 class="step-title">بصمة</h3>
+        <p class="step-sub">العميل يُثبت هويته محليًا على الجهاز.</p>
+        <span class="step-en">AUTHENTICATE</span>
+      </div>
+
+      <div class="step-card reveal delay-2" role="listitem">
+        <div class="step-num-wrap">
+          <span class="step-num">02</span>
+          <span class="step-icon" aria-hidden="true">✍️</span>
+        </div>
+        <h3 class="step-title">توقيع محلي</h3>
+        <p class="step-sub">بيانات المعاملة تُوقَّع رقميًا داخل الجهاز.</p>
+        <span class="step-en">LOCAL SIGNING</span>
+      </div>
+
+      <div class="step-card reveal delay-3" role="listitem">
+        <div class="step-num-wrap">
+          <span class="step-num">03</span>
+          <span class="step-icon" aria-hidden="true">📶</span>
+        </div>
+        <h3 class="step-title">NFC</h3>
+        <p class="step-sub">الرمز المشفر ينتقل لاتلامسيًا إلى هاتف التاجر.</p>
+        <span class="step-en">NFC TRANSFER</span>
+      </div>
+
+      <div class="step-card reveal delay-1" role="listitem">
+        <div class="step-num-wrap">
+          <span class="step-num">04</span>
+          <span class="step-icon" aria-hidden="true">🔍</span>
+        </div>
+        <h3 class="step-title">التحقق</h3>
+        <p class="step-sub">Atheer Switch يتحقق من صحة التوقيع والمعاملة.</p>
+        <span class="step-en">VERIFICATION</span>
+      </div>
+
+      <div class="step-card reveal delay-2" role="listitem">
+        <div class="step-num-wrap">
+          <span class="step-num">05</span>
+          <span class="step-icon" aria-hidden="true">⚡</span>
+        </div>
+        <h3 class="step-title">التنفيذ</h3>
+        <p class="step-sub">المعاملة تُنفَّذ عبر المحفظة الشريكة.</p>
+        <span class="step-en">EXECUTE</span>
+      </div>
+
+      <div class="step-card reveal delay-3" role="listitem">
+        <div class="step-num-wrap">
+          <span class="step-num">06</span>
+          <span class="step-icon" aria-hidden="true">✅</span>
+        </div>
+        <h3 class="step-title">نجاح</h3>
+        <p class="step-sub">التاجر يستلم تأكيد الدفع فورًا.</p>
+        <span class="step-en">SUCCESS</span>
+      </div>
+
+    </div>
+
+    <!-- Token Flow Indicator -->
+    <div class="token-flow reveal" aria-label="تدفق الرمز الإلكتروني" role="img" dir="ltr">
+
+      <div class="token-node">
+        <div class="token-bubble" aria-hidden="true">📱</div>
+        <span class="token-label-small">CUSTOMER</span>
+      </div>
+      <div class="token-connector"></div>
+
+      <div class="token-node">
+        <div class="token-bubble" aria-hidden="true">🔐</div>
+        <span class="token-label-small">SDK</span>
+      </div>
+      <div class="token-connector"></div>
+
+      <div class="token-node">
+        <div class="token-bubble" aria-hidden="true">✍️</div>
+        <span class="token-label-small">SIGN</span>
+      </div>
+      <div class="token-connector"></div>
+
+      <div class="token-node">
+        <div class="token-bubble" aria-hidden="true">📶</div>
+        <span class="token-label-small">NFC</span>
+      </div>
+      <div class="token-connector"></div>
+
+      <div class="token-node">
+        <div class="token-bubble" aria-hidden="true">🏪</div>
+        <span class="token-label-small">MERCHANT</span>
+      </div>
+      <div class="token-connector"></div>
+
+      <div class="token-node">
+        <div class="token-bubble" aria-hidden="true">🔍</div>
+        <span class="token-label-small">SWITCH</span>
+      </div>
+      <div class="token-connector"></div>
+
+      <div class="token-node">
+        <div class="token-bubble" aria-hidden="true">✅</div>
+        <span class="token-label-small">VERIFY</span>
+      </div>
+      <div class="token-connector"></div>
+
+      <div class="token-node">
+        <div class="token-bubble" aria-hidden="true">💼</div>
+        <span class="token-label-small">WALLET</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 05 — INTERACTIVE PAYMENT DEMO              ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="demo" aria-labelledby="demo-heading">
+
+  <div class="container section-pad" style="position:relative; z-index:1;">
+
+    <div class="section-label reveal" style="justify-content:center; text-align:center;">SIMULATION</div>
+
+    <div class="section-heading centered reveal delay-1">
+      <h2 id="demo-heading">محاكاة عملية الدفع</h2>
+      <p>اضغط على زر الدفع لمشاهدة كيف تتم عملية الدفع اللاتلامسي عبر أثير.</p>
+    </div>
+
+    <!-- Phones + NFC Zone -->
+    <div class="demo-phones-wrap">
+
+      <!-- Customer Phone -->
+      <div class="demo-phone-col">
+        <div class="demo-phone customer-side" aria-live="polite" aria-label="هاتف العميل">
+          <div class="demo-phone-inner">
+            <span class="demo-phone-role">CUSTOMER</span>
+            <div class="demo-status-icon" aria-hidden="true">💳</div>
+            <div class="demo-phone-amount">5,000</div>
+            <div class="demo-phone-currency">YER</div>
+            <div class="demo-status-text">جاهز للدفع</div>
+          </div>
+        </div>
+        <span class="demo-phone-label">العميل</span>
+      </div>
+
+      <!-- NFC Zone -->
+      <div class="demo-nfc-zone" aria-hidden="true">
+        <div class="demo-nfc-waves">
+          <div class="demo-wave"></div>
+          <div class="demo-wave"></div>
+          <div class="demo-wave"></div>
+        </div>
+        <span class="demo-nfc-label">NFC</span>
+      </div>
+
+      <!-- Merchant Phone -->
+      <div class="demo-phone-col">
+        <div class="demo-phone merchant-side" aria-live="polite" aria-label="هاتف التاجر">
+          <div class="demo-phone-inner">
+            <span class="demo-phone-role">MERCHANT</span>
+            <div class="demo-status-icon" aria-hidden="true">🏪</div>
+            <div class="demo-phone-amount">SoftPOS</div>
+            <div class="demo-phone-currency">بانتظار الدفع</div>
+            <div class="demo-status-text">جاهز للاستقبال</div>
+          </div>
+        </div>
+        <span class="demo-phone-label">التاجر</span>
+      </div>
+
+    </div>
+
+    <!-- Pay Button -->
+    <div style="text-align:center; margin-bottom: 32px;">
+      <button id="demo-pay-btn" class="btn btn-primary" aria-label="ابدأ محاكاة الدفع">
+        <span aria-hidden="true">💳</span>
+        دفع — 5,000 YER
+      </button>
+    </div>
+
+    <!-- Log -->
+    <div id="demo-log" class="demo-log" role="log" aria-live="polite" aria-atomic="false">
+      <div class="log-entry" data-step="0">
+        <span>التحقق بالبصمة...</span>
+        <span class="log-dot" aria-hidden="true"></span>
+      </div>
+      <div class="log-entry" data-step="1">
+        <span>Local signing in progress...</span>
+        <span class="log-dot" aria-hidden="true"></span>
+      </div>
+      <div class="log-entry success" data-step="2">
+        <span>Signed ✓</span>
+        <span class="log-dot" aria-hidden="true"></span>
+      </div>
+      <div class="log-entry" data-step="3">
+        <span>NFC TRANSFER — token transmitted</span>
+        <span class="log-dot" aria-hidden="true"></span>
+      </div>
+      <div class="log-entry" data-step="4">
+        <span>Verifying transaction via Atheer Switch...</span>
+        <span class="log-dot" aria-hidden="true"></span>
+      </div>
+      <div class="log-entry success" data-step="5">
+        <span>Verified ✓</span>
+        <span class="log-dot" aria-hidden="true"></span>
+      </div>
+      <div class="log-entry success" data-step="6">
+        <span>✅ PAYMENT SUCCESSFUL — 5,000 YER</span>
+        <span class="log-dot" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <!-- Success Banner -->
+    <div id="demo-success" style="
+      display:none; flex-direction:column; align-items:center; gap:12px;
+      background: linear-gradient(135deg, rgba(27,43,138,0.15), rgba(0,200,232,0.08));
+      border:1.5px solid rgba(0,200,232,0.35);
+      border-radius: var(--radius-lg); padding: 32px 24px; max-width:480px; margin:0 auto 32px;
+      text-align:center;
+      animation: successPop 0.5s cubic-bezier(0.34,1.56,0.64,1);
+    " role="status" aria-live="polite">
+      <div style="font-size:2.5rem;">✅</div>
+      <div style="font-size:1.4rem; font-weight:800; color:var(--accent); font-family:var(--font-latin);">PAYMENT SUCCESSFUL</div>
+      <div style="font-size:2rem; font-weight:800; font-family:var(--font-latin); color:var(--text-primary);">5,000 YER</div>
+      <div style="font-size:0.8rem; color:var(--text-secondary); font-family:var(--font-latin);">تمت العملية بنجاح</div>
+    </div>
+
+    <!-- Info Bar -->
+    <div class="demo-info-bar reveal">
+      <div class="demo-info-item">
+        <span>Internet Required (Customer)</span>
+        <span class="badge-no">NO</span>
+      </div>
+      <div class="demo-info-item">
+        <span>NFC Technology</span>
+        <strong>✓</strong>
+      </div>
+      <div class="demo-info-item">
+        <span>Local Signing</span>
+        <strong>✓</strong>
+      </div>
+    </div>
+
+    <p class="demo-disclaimer">
+      * هذا عرض توضيحي مرئي فقط. لا تتم أي معاملات مالية حقيقية من خلال هذه الصفحة.
+    </p>
+
+  </div>
+</section>
+
+<style>
+@keyframes successPop {
+  0%   { opacity: 0; transform: scale(0.85); }
+  100% { opacity: 1; transform: scale(1); }
+}
+</style>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 06 — WHY ATHEER / FEATURES                 ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="features" aria-labelledby="features-heading">
+  <div class="container section-pad">
+
+    <div class="section-label reveal">WHY ATHEER</div>
+
+    <div class="section-heading reveal delay-1">
+      <h2 id="features-heading">مصمم بشكل مختلف</h2>
+      <p>أثير ليس مجرد تطبيق — إنه بنية تحتية مبنية على مبادئ تقنية واضحة.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <article class="feature-card reveal delay-1">
+        <div class="feature-icon" aria-hidden="true">📵</div>
+        <div class="feature-en-tag">OFFLINE BY DESIGN</div>
+        <h3 class="feature-title">لا إنترنت؟ لا مشكلة.</h3>
+        <p class="feature-text">
+          الدفع من جانب العميل لا يعتمد على اتصال الإنترنت أثناء العملية اليومية بعد التفعيل الأولي.
+        </p>
+      </article>
+
+      <article class="feature-card reveal delay-2">
+        <div class="feature-icon" aria-hidden="true">📲</div>
+        <div class="feature-en-tag">SOFTPOS</div>
+        <h3 class="feature-title">هاتفك = نقطة البيع</h3>
+        <p class="feature-text">
+          هاتف التاجر يتحول إلى نقطة بيع متكاملة دون الحاجة إلى جهاز POS مخصص أو تكاليف إضافية.
+        </p>
+      </article>
+
+      <article class="feature-card reveal delay-3">
+        <div class="feature-icon" aria-hidden="true">📶</div>
+        <div class="feature-en-tag">NFC</div>
+        <h3 class="feature-title">قرّب وادفع</h3>
+        <p class="feature-text">
+          تجربة دفع سريعة وسلسة بمجرد تقريب الهاتفين — بدون لمس، بدون انتظار.
+        </p>
+      </article>
+
+      <article class="feature-card reveal delay-1">
+        <div class="feature-icon" aria-hidden="true">🔒</div>
+        <div class="feature-en-tag">HARDWARE-BACKED SECURITY</div>
+        <h3 class="feature-title">تشفير على مستوى الجهاز</h3>
+        <p class="feature-text">
+          يستفيد من TEE / StrongBox لحماية مفاتيح التشفير حيثما يدعم الجهاز ذلك.
+        </p>
+      </article>
+
+      <article class="feature-card reveal delay-2">
+        <div class="feature-icon" aria-hidden="true">⚡</div>
+        <div class="feature-en-tag">FAST EXPERIENCE</div>
+        <h3 class="feature-title">سرعة حقيقية</h3>
+        <p class="feature-text">
+          عملية مصممة لتكون سريعة وبسيطة — من فتح المحفظة إلى نجاح الدفع في ثوانٍ.
+        </p>
+      </article>
+
+      <article class="feature-card reveal delay-3">
+        <div class="feature-icon" aria-hidden="true">🇾🇪</div>
+        <div class="feature-en-tag">BUILT FOR YEMEN</div>
+        <h3 class="feature-title">صُنع هنا، لواقعنا</h3>
+        <p class="feature-text">
+          حل مصمم خصيصًا لواقع الاتصال والبنية التحتية في السوق اليمني، وليس حلًا مستوردًا.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 07 — SECURITY                              ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="security" aria-labelledby="security-heading">
+  <div class="container section-pad">
+
+    <div class="section-label reveal" style="justify-content:center; text-align:center;">SECURITY ARCHITECTURE</div>
+
+    <div class="security-headline reveal delay-1">
+      <h2 id="security-heading">
+        الأمان ليس إضافة.
+        <span>الأمان جزء من تصميم المعاملة.</span>
+      </h2>
+      <p>
+        تم تصميم كل خطوة في عملية الدفع مع مراعاة الأمان — من توقيع المعاملة
+        محليًا إلى التحقق المركزي، مع الاستفادة من قدرات الأجهزة المتاحة.
+      </p>
+    </div>
+
+    <!-- Security Visualization -->
+    <div class="security-viz reveal-scale delay-2" role="img" aria-label="طبقات الأمان في نظام أثير">
+
+      <!-- Concentric rings -->
+      <div class="security-ring" aria-hidden="true"></div>
+      <div class="security-ring" aria-hidden="true"></div>
+      <div class="security-ring" aria-hidden="true"></div>
+      <div class="security-ring" aria-hidden="true"></div>
+      <div class="security-ring" aria-hidden="true"></div>
+
+      <!-- Center -->
+      <div class="security-center" aria-hidden="true">🔐</div>
+
+      <!-- Layer dots (positions set by JS) -->
+      <div class="security-layer-dot sec-l1" aria-hidden="true">
+        <div class="security-dot"></div>
+        <span class="security-dot-label">User Auth</span>
+      </div>
+      <div class="security-layer-dot sec-l2" aria-hidden="true">
+        <div class="security-dot"></div>
+        <span class="security-dot-label">Secure Key</span>
+      </div>
+      <div class="security-layer-dot sec-l3" aria-hidden="true">
+        <div class="security-dot"></div>
+        <span class="security-dot-label">TEE/StrongBox</span>
+      </div>
+      <div class="security-layer-dot sec-l4" aria-hidden="true">
+        <div class="security-dot"></div>
+        <span class="security-dot-label">Digital Signature</span>
+      </div>
+      <div class="security-layer-dot sec-l5" aria-hidden="true">
+        <div class="security-dot"></div>
+        <span class="security-dot-label">NFC Token</span>
+      </div>
+      <div class="security-layer-dot sec-l6" aria-hidden="true">
+        <div class="security-dot"></div>
+        <span class="security-dot-label">Central Verify</span>
+      </div>
+      <div class="security-layer-dot sec-l7" aria-hidden="true">
+        <div class="security-dot"></div>
+        <span class="security-dot-label">Tx Validation</span>
+      </div>
+
+    </div>
+
+    <!-- Security items grid -->
+    <div class="security-grid">
+
+      <div class="sec-item reveal delay-1">
+        <div class="sec-item-icon" aria-hidden="true">👤</div>
+        <div class="sec-item-title">User Auth</div>
+        <p class="sec-item-text">تحقق محلي من هوية المستخدم قبل أي عملية</p>
+      </div>
+
+      <div class="sec-item reveal delay-2">
+        <div class="sec-item-icon" aria-hidden="true">🗝️</div>
+        <div class="sec-item-title">Secure Key Storage</div>
+        <p class="sec-item-text">حماية مفاتيح التشفير داخل بيئة آمنة</p>
+      </div>
+
+      <div class="sec-item reveal delay-3">
+        <div class="sec-item-icon" aria-hidden="true">🛡️</div>
+        <div class="sec-item-title">TEE / StrongBox</div>
+        <p class="sec-item-text">استخدام البيئة الآمنة للجهاز حيث يتاح ذلك</p>
+      </div>
+
+      <div class="sec-item reveal delay-4">
+        <div class="sec-item-icon" aria-hidden="true">✍️</div>
+        <div class="sec-item-title">Digital Signature</div>
+        <p class="sec-item-text">توقيع رقمي على كل معاملة (ECDSA)</p>
+      </div>
+
+      <div class="sec-item reveal delay-1">
+        <div class="sec-item-icon" aria-hidden="true">🪙</div>
+        <div class="sec-item-title">NFC Token</div>
+        <p class="sec-item-text">رمز مشفر مخصص لكل عملية دفع</p>
+      </div>
+
+      <div class="sec-item reveal delay-2">
+        <div class="sec-item-icon" aria-hidden="true">🔍</div>
+        <div class="sec-item-title">Central Verification</div>
+        <p class="sec-item-text">تحقق مركزي من صحة كل معاملة</p>
+      </div>
+
+      <div class="sec-item reveal delay-3">
+        <div class="sec-item-icon" aria-hidden="true">📋</div>
+        <div class="sec-item-title">Tx Validation</div>
+        <p class="sec-item-text">التحقق من سلامة بيانات المعاملة</p>
+      </div>
+
+      <div class="sec-item reveal delay-4">
+        <div class="sec-item-icon" aria-hidden="true">⚡</div>
+        <div class="sec-item-title">Real-time Processing</div>
+        <p class="sec-item-text">معالجة فورية عند عودة الاتصال</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 08 — THE ATHEER ECOSYSTEM                  ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="ecosystem" aria-labelledby="ecosystem-heading">
+  <div class="container section-pad">
+
+    <div class="section-label reveal" style="justify-content:center; text-align:center;">THE ECOSYSTEM</div>
+
+    <div class="section-heading centered reveal delay-1">
+      <h2 id="ecosystem-heading">أثير — منظومة متكاملة</h2>
+      <p>
+        أثير ليس تطبيقًا — إنه بنية تحتية للمدفوعات تتكون من
+        مكونات متكاملة تعمل معًا لتوفير تجربة دفع شاملة.
+      </p>
+    </div>
+
+    <div class="ecosystem-viz">
+
+      <!-- Center -->
+      <div class="ecosystem-center-node reveal-scale delay-1">
+        <div class="eco-center-icon" aria-hidden="true">⚡</div>
+        <div class="eco-center-label">ATHEER</div>
+      </div>
+
+      <!-- Node cards -->
+      <div class="ecosystem-nodes">
+
+        <div class="eco-node reveal delay-1" tabindex="0" role="button" aria-label="تفاصيل Atheer SDK">
+          <div class="eco-node-icon" aria-hidden="true">📱</div>
+          <div class="eco-node-en">Atheer SDK</div>
+          <h3 class="eco-node-title">طبقة الدفع المحمول</h3>
+          <p class="eco-node-text">
+            المكتبة البرمجية التي تُمكّن المحافظ الإلكترونية من التوقيع المحلي،
+            وإنشاء الرموز المشفرة، والتواصل عبر NFC.
+          </p>
+        </div>
+
+        <div class="eco-node reveal delay-2" tabindex="0" role="button" aria-label="تفاصيل Atheer Switch">
+          <div class="eco-node-icon" aria-hidden="true">🔀</div>
+          <div class="eco-node-en">Atheer Switch</div>
+          <h3 class="eco-node-title">التحقق المركزي</h3>
+          <p class="eco-node-text">
+            الطبقة المركزية للتحقق من المعاملات ومعالجتها، تضمن سلامة
+            كل عملية دفع قبل تنفيذها.
+          </p>
+        </div>
+
+        <div class="eco-node reveal delay-3" tabindex="0" role="button" aria-label="تفاصيل Partner Wallet">
+          <div class="eco-node-icon" aria-hidden="true">💼</div>
+          <div class="eco-node-en">Partner Wallet</div>
+          <h3 class="eco-node-title">التكامل مع المحافظ</h3>
+          <p class="eco-node-text">
+            منظومة المحافظ الإلكترونية الشريكة التي تدمج قدرات أثير
+            لتوفير مدفوعات اللاتلامسية لمستخدميها.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 09 — BUSINESS VALUE                        ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="value" aria-labelledby="value-heading">
+  <div class="container section-pad">
+
+    <div class="section-label reveal">BUSINESS VALUE</div>
+
+    <div class="section-heading reveal delay-1">
+      <h2 id="value-heading">قيمة واضحة لكل شريك</h2>
+      <p>أثير يفتح فرصًا تجارية حقيقية لكل جهة في المنظومة.</p>
+    </div>
+
+    <div class="value-cols">
+
+      <div class="value-col reveal delay-1">
+        <div class="value-audience">FOR MERCHANTS</div>
+        <h3>للتجار</h3>
+        <ul class="value-list">
+          <li>لا حاجة لجهاز POS مخصص — هاتفك كافٍ</li>
+          <li>عملية دفع سريعة وسلسة</li>
+          <li>نشر سهل دون تكاليف بنية تحتية</li>
+          <li>سجل رقمي لكل معاملة</li>
+        </ul>
+      </div>
+
+      <div class="value-col reveal delay-2">
+        <div class="value-audience">FOR WALLETS</div>
+        <h3>للمحافظ الإلكترونية</h3>
+        <ul class="value-list">
+          <li>تكامل عبر SDK دون إعادة بناء المنصة</li>
+          <li>قدرة دفع بدون إنترنت للمستخدمين</li>
+          <li>فرص دفع جديدة في مناطق الاتصال الضعيف</li>
+          <li>ميزة تنافسية تقنية</li>
+        </ul>
+      </div>
+
+      <div class="value-col reveal delay-3">
+        <div class="value-audience">FOR TELECOM / INFRA</div>
+        <h3>لشركات الاتصالات</h3>
+        <ul class="value-list">
+          <li>فرص zero-rating محتملة للمعاملات</li>
+          <li>تقليل الاعتماد على الاتصال الدائم</li>
+          <li>شراكة في البنية التحتية للدفع</li>
+          <li>دعم التحول الرقمي في السوق</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="value-tagline reveal">
+      <span>التقنية التي تتكيف مع السوق</span> — وليس العكس.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 10 — NUMBERS                               ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="numbers" aria-labelledby="numbers-heading">
+  <div class="container section-pad">
+
+    <div class="numbers-bg-text" aria-hidden="true">ATHEER</div>
+
+    <div class="section-label reveal" style="justify-content:center; text-align:center;">BY THE NUMBERS</div>
+
+    <h2 id="numbers-heading" class="sr-only">أرقام أثير</h2>
+
+    <div class="numbers-grid">
+
+      <div class="number-item reveal delay-1">
+        <div class="number-value" aria-label="أقل من ثانية واحدة">
+          &lt;&nbsp;<span data-counter="1" data-suffix="s" data-duration="1200">0</span>
+        </div>
+        <div class="number-label">تجربة دفع سريعة<br /><span style="font-family:var(--font-latin);font-size:0.75rem;color:var(--text-muted)">Fast payment experience</span></div>
+      </div>
+
+      <div class="number-item reveal delay-2">
+        <div class="number-value" aria-label="ثلاث خطوات">
+          <span data-counter="3" data-duration="1000">0</span>
+        </div>
+        <div class="number-label">فتح → قرّب → تم<br /><span style="font-family:var(--font-latin);font-size:0.75rem;color:var(--text-muted)">Open → Tap → Done</span></div>
+      </div>
+
+      <div class="number-item reveal delay-3">
+        <div class="number-value" style="font-size:clamp(1.8rem,3.5vw,2.8rem); letter-spacing:0.05em;" aria-label="NFC">NFC</div>
+        <div class="number-label">اتصال لاتلامسي<br /><span style="font-family:var(--font-latin);font-size:0.75rem;color:var(--text-muted)">Contactless communication</span></div>
+      </div>
+
+      <div class="number-item reveal delay-4">
+        <div class="number-value" aria-label="صفر أجهزة POS">
+          <span data-counter="0" data-duration="800">0</span>
+        </div>
+        <div class="number-label">جهاز POS للتاجر<br /><span style="font-family:var(--font-latin);font-size:0.75rem;color:var(--text-muted)">Dedicated POS hardware</span></div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 11 — COMPARISON                            ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="comparison" aria-labelledby="comparison-heading">
+  <div class="container section-pad">
+
+    <div class="section-label reveal">COMPARISON</div>
+
+    <div class="section-heading reveal delay-1">
+      <h2 id="comparison-heading">مقارنة وسائل الدفع</h2>
+      <p>كيف يقارن أثير بطرق الدفع الحالية في بيئات الاتصال الضعيف؟</p>
+    </div>
+
+    <div class="comparison-table-wrap reveal delay-2">
+      <table class="comparison-table" role="table" aria-label="مقارنة وسائل الدفع">
+        <thead>
+          <tr>
+            <th scope="col" style="text-align:right;">المعيار</th>
+            <th scope="col">كاش</th>
+            <th scope="col">QR</th>
+            <th scope="col">POS تقليدي</th>
+            <th scope="col" class="atheer-col">أثير</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>لا يتطلب إنترنت من العميل</td>
+            <td><span class="check" aria-label="نعم">✓</span></td>
+            <td><span class="cross" aria-label="لا">✗</span></td>
+            <td><span class="cross" aria-label="لا">✗</span></td>
+            <td class="atheer-col"><span class="check" aria-label="نعم">✓</span></td>
+          </tr>
+          <tr>
+            <td>بدون جهاز مخصص للتاجر</td>
+            <td><span class="check" aria-label="نعم">✓</span></td>
+            <td><span class="check" aria-label="نعم">✓</span></td>
+            <td><span class="cross" aria-label="لا">✗</span></td>
+            <td class="atheer-col"><span class="check" aria-label="نعم">✓</span></td>
+          </tr>
+          <tr>
+            <td>لاتلامسي (Contactless)</td>
+            <td><span class="cross" aria-label="لا">✗</span></td>
+            <td><span class="partial" aria-label="جزئيًا">جزئيًا</span></td>
+            <td><span class="partial" aria-label="جزئيًا">جزئيًا</span></td>
+            <td class="atheer-col"><span class="check" aria-label="نعم">✓</span></td>
+          </tr>
+          <tr>
+            <td>سرعة العملية</td>
+            <td><span class="partial" aria-label="متوسطة">متوسطة</span></td>
+            <td><span class="partial" aria-label="متوسطة">متوسطة</span></td>
+            <td><span class="partial" aria-label="متوسطة">متوسطة</span></td>
+            <td class="atheer-col"><span class="check" aria-label="عالية">عالية</span></td>
+          </tr>
+          <tr>
+            <td>سجل رقمي للمعاملة</td>
+            <td><span class="cross" aria-label="لا">✗</span></td>
+            <td><span class="check" aria-label="نعم">✓</span></td>
+            <td><span class="check" aria-label="نعم">✓</span></td>
+            <td class="atheer-col"><span class="check" aria-label="نعم">✓</span></td>
+          </tr>
+          <tr>
+            <td>مناسب لبيئات الاتصال الضعيف</td>
+            <td><span class="check" aria-label="نعم">✓</span></td>
+            <td><span class="cross" aria-label="لا">✗</span></td>
+            <td><span class="cross" aria-label="لا">✗</span></td>
+            <td class="atheer-col"><span class="check" aria-label="نعم">✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 12 — FOR TECH PARTNERS / SDK               ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="partners-tech" aria-labelledby="sdk-heading">
+  <div class="container section-pad">
+
+    <div class="partners-tech-grid">
+
+      <!-- Text Side -->
+      <div class="sdk-headline">
+
+        <div class="section-label reveal">FOR DEVELOPERS</div>
+
+        <h2 id="sdk-heading" class="reveal delay-1">
+          لا تُعِد بناء<br />
+          <span>محفظتك.</span><br />
+          أضف أثير.
+        </h2>
+
+        <p class="reveal delay-2">
+          يكفي دمج Atheer SDK في محفظتك الإلكترونية لتضيف قدرة الدفع
+          اللاتلامسي بدون إنترنت لجميع مستخدميك.
+        </p>
+
+        <div class="sdk-formula reveal delay-3">
+          <div class="sdk-formula-item">Your Wallet</div>
+          <span class="sdk-formula-plus">+</span>
+          <div class="sdk-formula-item">Atheer SDK</div>
+          <span class="sdk-formula-arrow">→</span>
+          <div class="sdk-formula-result">Offline Contactless Payments</div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary reveal delay-4">
+          استكشف التكامل
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+
+      </div>
+
+      <!-- Code Block Side -->
+      <div class="code-block reveal-scale delay-3" dir="ltr">
+        <div class="code-block-header">
+          <div class="code-block-dots" aria-hidden="true">
+            <div class="code-dot"></div>
+            <div class="code-dot"></div>
+            <div class="code-dot"></div>
+          </div>
+          <span class="code-block-lang">Kotlin — Conceptual</span>
+        </div>
+        <div class="code-content">
+<span class="code-comment">// Initialize Atheer SDK in your wallet app</span>
+<span class="code-keyword">val</span> atheer = <span class="code-fn">AtheerSDK</span>.<span class="code-fn">builder</span>()
+    .<span class="code-fn">setEnvironment</span>(<span class="code-accent">Environment</span>.<span class="code-param">PRODUCTION</span>)
+    .<span class="code-fn">setWalletId</span>(<span class="code-string">"your-wallet-id"</span>)
+    .<span class="code-fn">build</span>()
+
+<span class="code-comment">// Initiate a payment session</span>
+atheer.<span class="code-fn">createPaymentSession</span>(
+    amount = <span class="code-param">5000</span>,
+    currency = <span class="code-string">"YER"</span>,
+    onReady = { session -&gt;
+        <span class="code-comment">// Begin NFC transfer</span>
+        session.<span class="code-fn">startNFCTransfer</span>()
+    }
+)
+        </div>
+        <div class="code-note">
+          * هذا كود توضيحي مفاهيمي فقط. الواجهة البرمجية الحقيقية تتوفر عند التكامل.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 13 — LIVE DEMO / EXHIBITION                ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="live-demo" aria-labelledby="live-demo-heading">
+  <div class="live-demo-bg" aria-hidden="true"></div>
+
+  <div class="container section-pad" style="position:relative; z-index:1;">
+
+    <div class="section-label reveal" style="justify-content:center; text-align:center;">EXHIBITION DEMO</div>
+
+    <h2 id="live-demo-heading" class="live-demo-headline reveal delay-1">جرّب أثير</h2>
+
+    <p class="live-demo-sub reveal delay-2">
+      شاهد كيف تتحول عملية الدفع من عدة خطوات إلى تجربة
+      بسيطة وسريعة.
+    </p>
+
+    <div class="live-demo-content">
+
+      <!-- Steps -->
+      <div class="live-demo-steps reveal delay-2">
+        <div class="live-step">
+          <div class="live-step-num">1</div>
+          <p class="live-step-text">العميل يفتح محفظته ويدخل مبلغ الدفع</p>
+        </div>
+        <div class="live-step">
+          <div class="live-step-num">2</div>
+          <p class="live-step-text">المصادقة بالبصمة والتوقيع المحلي يتمان فوريًا</p>
+        </div>
+        <div class="live-step">
+          <div class="live-step-num">3</div>
+          <p class="live-step-text">تقريب الهاتفين — NFC ينقل الرمز المشفر</p>
+        </div>
+        <div class="live-step">
+          <div class="live-step-num">4</div>
+          <p class="live-step-text">أثير يتحقق وينفذ — التاجر يستلم التأكيد</p>
+        </div>
+      </div>
+
+      <!-- QR + Buttons -->
+      <div class="qr-zone reveal delay-3">
+
+        <div class="qr-placeholder" aria-label="رمز QR للتجربة الحية">
+          <div class="qr-icon" aria-hidden="true">⬛</div>
+          <span class="qr-label">SCAN TO DEMO</span>
+        </div>
+        <span class="qr-sub">امسح لتجربة العرض المباشر</span>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
+          <button class="btn btn-primary" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">
+            Launch Demo
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 14 — PARTNERSHIP CTA                       ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="partnership" aria-labelledby="partnership-heading">
+
+  <div class="partnership-glow" aria-hidden="true"></div>
+
+  <div class="container section-pad" style="position:relative; z-index:1;">
+
+    <span class="partnership-label reveal">PARTNERSHIP</span>
+
+    <h2 id="partnership-heading" class="partnership-headline reveal delay-1">
+      نبني البنية التحتية<br />
+      للخطوة التالية في<br />
+      <span style="color:var(--accent);">المدفوعات الرقمية.</span>
+    </h2>
+
+    <p class="partnership-sub reveal delay-2">
+      نبحث عن محافظ إلكترونية، بنوك، شركات اتصالات، وشركاء تقنيين
+      لتوسيع منظومة الدفع اللاتلامسي في اليمن.
+    </p>
+
+    <div class="partnership-types reveal delay-3">
+      <span class="partner-type-tag">📱 محافظ إلكترونية</span>
+      <span class="partner-type-tag">🏦 بنوك</span>
+      <span class="partner-type-tag">📡 شركات اتصالات</span>
+      <span class="partner-type-tag">💻 شركاء تقنيون</span>
+      <span class="partner-type-tag">🏛️ جهات حكومية</span>
+    </div>
+
+    <div class="partnership-actions reveal delay-4">
+      <a href="#contact" class="btn btn-primary">
+        Partner with Atheer
+      </a>
+      <a href="#contact" class="btn btn-secondary">
+        اطلب عرضًا تقنيًا
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SECTION 15 — CONTACT                               ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container section-pad">
+
+    <div class="section-label reveal" style="justify-content:center; text-align:center;">CONTACT</div>
+
+    <div class="section-heading centered reveal delay-1">
+      <h2 id="contact-heading">تحدث إلى الفريق</h2>
+      <p>
+        هل أنت مهتم بالتكامل أو الشراكة أو التجربة؟
+        نحن هنا للإجابة على أسئلتك.
+      </p>
+    </div>
+
+    <!-- Engineer name card -->
+    <div style="text-align:center; margin: 40px 0 20px;" class="reveal delay-2">
+      <div style="
+        display:inline-flex; flex-direction:column; align-items:center; gap:8px;
+        background: var(--bg-card); border: 1px solid var(--border-card);
+        border-radius: var(--radius-lg); padding: 24px 48px;
+      ">
+        <span style="font-size:2rem;" aria-hidden="true">👷</span>
+        <span style="font-size:0.7rem; font-family:var(--font-latin); letter-spacing:0.1em; text-transform:uppercase; color:var(--accent);">LEAD ENGINEER</span>
+        <span style="font-size:1.15rem; font-weight:700;">المهندس أحمد علي المتوكل</span>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+
+      <a href="tel:+967775052259" class="contact-card reveal delay-1" aria-label="اتصل بنا على الرقم +967-775052259">
+        <div class="contact-card-icon" aria-hidden="true">📞</div>
+        <div class="contact-card-label">PHONE</div>
+        <div class="contact-card-value" dir="ltr">+967-775052259</div>
+        <div class="contact-card-sub">اتصل بنا الآن</div>
+      </a>
+
+      <a href="mailto:ahmedali.mtw@gmail.com" class="contact-card reveal delay-2" aria-label="راسلنا على ahmedali.mtw@gmail.com">
+        <div class="contact-card-icon" aria-hidden="true">✉️</div>
+        <div class="contact-card-label">EMAIL</div>
+        <div class="contact-card-value" dir="ltr" style="font-size:0.9rem;">ahmedali.mtw@gmail.com</div>
+        <div class="contact-card-sub">نرد خلال 24 ساعة</div>
+      </a>
+
+      <div class="contact-card reveal delay-3" style="cursor:default;" aria-label="QR code للتواصل">
+        <div class="contact-card-icon" aria-hidden="true">⬛</div>
+        <div class="contact-card-label">DEMO QR</div>
+        <div class="contact-card-value" style="font-size:0.8rem;">امسح للتواصل</div>
+        <div class="contact-card-sub" dir="ltr" style="font-size:0.72rem;">/assets/qr/demo-qr.png</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  FOOTER                                              ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      <img src="assets/logo/atheer-logo.svg" alt="أثير Atheer" width="160" height="36" loading="lazy" />
+    </div>
+
+    <div class="footer-divider" aria-hidden="true"></div>
+
+    <p class="footer-tagline">
+      Digital payment that works where the Internet doesn't.
+    </p>
+
+    <p class="footer-copy">
+      &copy; <span id="copyright-year">2026</span> Atheer — أثير. Crafted for Yemen.
+    </p>
+
+  </div>
+</footer>
+
+
+<!-- ── Scripts ── -->
+<script src="js/main.js" defer></script>
+
+<!-- Screen-reader only utility class -->
+<style>
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>
+
+</body>
+</html>
