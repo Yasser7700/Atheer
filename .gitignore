@@ -1,0 +1,10 @@
+# Large video files — host separately (YouTube, Cloudflare Stream, etc.)
+assets/*.mp4
+assets/*.mov
+assets/*.avi
+assets/*.mkv
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

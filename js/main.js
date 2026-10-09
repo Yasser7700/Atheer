@@ -564,3 +564,50 @@ const on  = (el, ev, fn) => el && el.addEventListener(ev, fn, { passive: true })
     }, { passive: true });
   });
 })();
+
+
+/* ──────────────────────────────────────────────
+   17. VIDEO PLAYER — play on click only
+   ────────────────────────────────────────────── */
+(function initVideoPlayer() {
+  const overlay   = qs('#video-overlay');
+  const video     = qs('#atheer-video');
+  const container = qs('#video-container');
+
+  if (!overlay || !video) return;
+
+  const activateVideo = () => {
+    // Hide overlay
+    overlay.style.opacity = '0';
+    overlay.style.pointerEvents = 'none';
+    setTimeout(() => {
+      overlay.style.display = 'none';
+    }, 400);
+
+    // Show and play video
+    video.style.display = 'block';
+    video.style.position = 'relative';
+    video.style.zIndex   = '5';
+    video.load();
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Autoplay prevented — user already interacted, just show controls
+      });
+    }
+  };
+
+  // Clicking overlay
+  overlay.addEventListener('click', activateVideo);
+
+  // Keyboard accessibility (Enter / Space)
+  overlay.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      activateVideo();
+    }
+  });
+
+  // Transition for overlay fade
+  overlay.style.transition = 'opacity 0.4s ease';
+})();
